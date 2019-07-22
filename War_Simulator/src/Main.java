@@ -7,12 +7,17 @@ public class Main {
 		//Program startup TODO proper intro
 		System.out.println("Hello welcome to war simulator");
 		
-		Armies obj1 = new Armies();
+		Armies Army1 = new Armies();
+		Armies Army2 = new Armies();
 		//creating a new object for the Armies class
+		//currently only two can be implemented
 		//TODO make this a for statement so that multiple armies can be created
-		obj1.receiveArmyInfo();
-		System.out.println(obj1.sendArmyName());
-		System.out.println(obj1.sendArmyTroopCount());
+		Army1.receiveArmyInfo();
+		Army2.receiveArmyInfo();
+		System.out.println(Army1.sendArmyName());
+		System.out.println(Army1.sendArmyTroopCount());
+		System.out.println(Army2.sendArmyName());
+		System.out.println(Army2.sendArmyTroopCount());
 	
 	
 			
