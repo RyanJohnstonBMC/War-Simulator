@@ -5,8 +5,8 @@ public class Armies {
 	
 	
 	private String armyName;
-	private Long troopNumber;
-	
+	private int troopNumber;
+	Armies [] armyArray = new Armies [100];
 	
 	
 	public void storeArmyInfo() {
@@ -19,7 +19,7 @@ public class Armies {
 		
 	}
 	
-	public void setTroopNumber (Long newTroopNumber) {
+	public void setTroopNumber (int newTroopNumber) {
 		
 		this.troopNumber = newTroopNumber;
 	}
@@ -27,18 +27,23 @@ public class Armies {
 	public String getArmyName() {
 		 return armyName;
 	}
-	public void printArmyName() {
-		System.out.println(armyName);
-	}
-	public void printTroopNumber() {
-		System.out.println(troopNumber);
-	}
-	public Long getArmyTroopNumber() {
+
+	public int getArmyTroopNumber() {
 		return troopNumber;
 	}
-	/*
-	 * 
-		System.out.println("Please enter the number of troops in " + armyName);
-		this.troopCount = scan.nextLong();
-	 */
+	
+	void combat (Armies Army1, Armies Army2)
+	{
+		getArmyName();
+		getArmyTroopNumber();
+		 if(Army1.troopNumber > Army2.troopNumber) {
+			 
+			 System.out.println("The victor is " + Army1.getArmyName());
+			 
+		 }
+		 else {
+			 System.out.println("The victor is " + Army2.getArmyName());
+		 }
+	}
+	
 }

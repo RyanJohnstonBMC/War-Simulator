@@ -1,9 +1,10 @@
 
-public class Combat {
-	boolean result;
-	Long troopNumber;
+public class Combat  {
+	
+	
 	
 	public boolean Result() {
+		
 		return (result);
 		
 	

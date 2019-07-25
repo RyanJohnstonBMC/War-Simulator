@@ -16,27 +16,36 @@ public class Main {
 		Armies Army1 = new Armies();
 		Armies Army2 = new Armies();
 		
-		System.out.println("Please enter the name for army");
-		Army1.setArmyName(scan.next());
+		System.out.println("Please enter the name for army 1");
+		Army1.setArmyName(scan.nextLine());
 		System.out.println("please enter troop number");
-		Army1.setTroopNumber(scan.nextLong());
-		
+		Army1.setTroopNumber(scan.nextInt());
+		System.out.println("----------------------------------------");
 		System.out.println("please enter name for army 2");
-		Army2.setArmyName(scan.next());
+		Army2.setArmyName(scan.nextLine());
 		System.out.println("please enter troop number");
-		Army2.setTroopNumber(scan.nextLong());
+		Army2.setTroopNumber(scan.nextInt());
 		
 		
-		Army1.printArmyName();
-		Army1.printTroopNumber();
-		Army2.printArmyName();
-		Army2.printTroopNumber();
+		System.out.println(Army1.getArmyName());
+		System.out.println(Army1.getArmyTroopNumber());
+		System.out.println(Army2.getArmyName());
+		System.out.println(Army2.getArmyName());
+		
+		Armies test1 = new Armies();
+		test1.combat(Army1, Army2);
+	}
+
+	
+	
+		
+		
 	
 	
 			
 		
-	}
 }
+
 		
 
 
